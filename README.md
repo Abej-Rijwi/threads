@@ -1,8 +1,12 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/O5cmLDVTgAs?feature=shared" target="_blank">
+    <!-- <a href="https://www.youtube.com/@JavaScriptTutorialFamily" target="_blank">
       <img src="https://github.com/adrianhajdin/threads/assets/151519281/a9cd1088-968b-4b1d-b21a-f5f97d0c202b" alt="Project Banner">
-    </a>
+    </a> -->
+
+    <!-- [![Project Banner](public/assets/threads_image.png)](https://www.youtube.com/@JavaScriptTutorialFamily) -->
+    [![Project Banner](assets/threads_image.png)](https://www.youtube.com/@JavaScriptTutorialFamily)
+
   <br />
 
   <div>
@@ -18,7 +22,7 @@
   <h3 align="center">A full stack Threads Clone</h3>
 
    <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
+     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@JavaScriptTutorialFamily" target="_blank"><b>JavaScript Tutorial</b></a> YouTube. Join the JST family!
     </div>
 </div>
 
@@ -34,7 +38,7 @@
 
 ## 🚨 Tutorial
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@JavaScriptTutorialFamily" target="_blank"><b>JavaScript Tutorial</b></a>.
 
 If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
@@ -42,11 +46,11 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Build a full stack Threads clone using Next.js 14+ with a redesigned look transformed from a Figma design, user interaction to community management, technical implementation, and various features, including nested deep comments, notifications, real-time-search, and more.  
+Build a full stack Threads clone using Next.js 14+ with a redesigned look transformed from a Figma design, user interaction to community management, technical implementation, and various features, including nested deep comments, notifications, real-time-search, and more.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
+If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+<a href="https://discord.com/invite/ZwbTTDWGF8" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -109,7 +113,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Form Management with React Hook Form**: Efficient management of forms with React Hook Form for a streamlined user input experience.
 
-and many more, including code architecture and reusability 
+and many more, including code architecture and reusability
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -126,7 +130,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/threads.git
+git clone https://github.com/Abej-Rijwi/threads.git
 cd threads
 ```
 
@@ -151,7 +155,7 @@ NEXT_CLERK_WEBHOOK_SECRET=
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 ```
 
-Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up for the corresponding websites on [MongoDB](https://www.mongodb.com/), [Clerk](https://clerk.com/), and [Uploadthing](https://uploadthing.com/). 
+Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up for the corresponding websites on [MongoDB](https://www.mongodb.com/), [Clerk](https://clerk.com/), and [Uploadthing](https://uploadthing.com/).
 
 **Running the Project**
 
@@ -713,36 +717,36 @@ interface Props {
 
 function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
   return (
-    <article className='community-card'>
-      <div className='flex flex-wrap items-center gap-3'>
-        <Link href={`/communities/${id}`} className='relative h-12 w-12'>
+    <article className="community-card">
+      <div className="flex flex-wrap items-center gap-3">
+        <Link href={`/communities/${id}`} className="relative h-12 w-12">
           <Image
             src={imgUrl}
-            alt='community_logo'
+            alt="community_logo"
             fill
-            className='rounded-full object-cover'
+            className="rounded-full object-cover"
           />
         </Link>
 
         <div>
           <Link href={`/communities/${id}`}>
-            <h4 className='text-base-semibold text-light-1'>{name}</h4>
+            <h4 className="text-base-semibold text-light-1">{name}</h4>
           </Link>
-          <p className='text-small-medium text-gray-1'>@{username}</p>
+          <p className="text-small-medium text-gray-1">@{username}</p>
         </div>
       </div>
 
-      <p className='mt-4 text-subtle-medium text-gray-1'>{bio}</p>
+      <p className="mt-4 text-subtle-medium text-gray-1">{bio}</p>
 
-      <div className='mt-5 flex flex-wrap items-center justify-between gap-3'>
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
         <Link href={`/communities/${id}`}>
-          <Button size='sm' className='community-card_btn'>
+          <Button size="sm" className="community-card_btn">
             View
           </Button>
         </Link>
 
         {members.length > 0 && (
-          <div className='flex items-center'>
+          <div className="flex items-center">
             {members.map((member, index) => (
               <Image
                 key={index}
@@ -756,7 +760,7 @@ function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
               />
             ))}
             {members.length > 3 && (
-              <p className='ml-1 text-subtle-medium text-gray-1'>
+              <p className="ml-1 text-subtle-medium text-gray-1">
                 {members.length}+ Users
               </p>
             )}
@@ -1312,14 +1316,18 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
 }
 
 interface Params {
-  text: string,
-  author: string,
-  communityId: string | null,
-  path: string,
+  text: string;
+  author: string;
+  communityId: string | null;
+  path: string;
 }
 
-export async function createThread({ text, author, communityId, path }: Params
-) {
+export async function createThread({
+  text,
+  author,
+  communityId,
+  path,
+}: Params) {
   try {
     connectToDB();
 
@@ -1516,7 +1524,8 @@ import { generateReactHelpers } from "@uploadthing/react/hooks";
 
 import type { OurFileRouter } from "@/app/api/uploadthing/core";
 
-export const { useUploadThing, uploadFiles } = generateReactHelpers<OurFileRouter>();
+export const { useUploadThing, uploadFiles } =
+  generateReactHelpers<OurFileRouter>();
 ```
 
 </details>
@@ -1765,27 +1774,4 @@ export function formatThreadCount(count: number): string {
 
 ## <a name="links">🔗 Links</a>
 
-Assets used in the project are [here](https://drive.google.com/file/d/1lg7MMKgXwFabymHi1qxRYMxWVXiZPM9l/view)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js 14 Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsmastery.pro/next14" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/557837ce-f612-4530-ab24-189e75133c71" alt="Project Banner">
-</a>
-
-<br />
-<br />
-
-**Accelerate your professional journey with the Expert Training program**
-
-And if you're hungry for more than just a course and want to understand how we learn and tackle tech challenges, hop into our personalized masterclass. We cover best practices, different web skills, and offer mentorship to boost your confidence. Let's learn and grow together!
-
-<a href="https://www.jsmastery.pro/masterclass" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/fed352ad-f27b-400d-9b8f-c7fe628acb84" alt="Project Banner">
-</a>
-
-#
+Assets used in the project are [here](https://drive.google.com/drive/folders/1rRyyvRt1FOjaP_QLKrILiUz9tsjNIsni)
