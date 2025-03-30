@@ -1,12 +1,8 @@
 <div align="center">
   <br />
-    <!-- <a href="https://www.youtube.com/@JavaScriptTutorialFamily" target="_blank">
+    <a href="https://www.youtube.com/@JavaScriptTutorialFamily" target="_blank">
       <img src="https://github.com/adrianhajdin/threads/assets/151519281/a9cd1088-968b-4b1d-b21a-f5f97d0c202b" alt="Project Banner">
-    </a> -->
-
-    <!-- [![Project Banner](public/assets/threads_image.png)](https://www.youtube.com/@JavaScriptTutorialFamily) -->
-    [![Project Banner](assets/threads_image.png)](https://www.youtube.com/@JavaScriptTutorialFamily)
-
+    </a>
   <br />
 
   <div>
