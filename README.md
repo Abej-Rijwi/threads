@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
   </div>
 
-  <h3 align="center">A full stack Threads Clone</h3>
+  <h3 align="center">A Full-Stack Threads Clone</h3>
 
    <div align="center">
      Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@MasterJavaScript" target="_blank"><b>JavaScript Tutorial</b></a> YouTube. Join the JST family!
